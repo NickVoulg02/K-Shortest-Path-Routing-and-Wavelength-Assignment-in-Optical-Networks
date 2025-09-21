@@ -59,7 +59,7 @@ Install dependencies:
 pip install networkx matplotlib
 ```
 
-🚀 How to Run
+## 🚀 How to Run
 
 Clone the repo:
 ```bash
@@ -70,7 +70,7 @@ python main_b.py   # path analysis & edge statistics
 python main_c.py   # wavelength assignment (Random Fit, First Fit, Least Used)
 ```
 
-📊 Results Summary
+## 📊 Results Summary
 - k Shortest Paths
   - For small topologies, many source-destination pairs yield fewer than k possible unique paths.
   - Paths are visualized for clarity with NetworkX + Matplotlib.
@@ -86,12 +86,12 @@ python main_c.py   # wavelength assignment (Random Fit, First Fit, Least Used)
 
 📌 Observation: While blocking percentage was near zero in tested traffic matrices (sufficient wavelengths available), allocation strategies showed different efficiencies in wavelength usage and execution time.
 
-📖 References
+## 📖 References
 - [k Shortest Path Routing – Wikipedia](https://en.wikipedia.org/wiki/K_shortest_path_routing)
 - [First Fit vs Random Fit – Average Case Analysis]
 - [Wavelength Assignment in Optical Networks](https://www.researchgate.net/publication/4287125_Wavelength_Assignment_in_Optical_Networks_with_Imprecise_Network_State_Information)
 
-👨‍💻 Author
+## 👨‍💻 Author
 **Nikolaos Voulgaris**  
 Department of Computer Engineering & Informatics, University of Patras  
 [GitHub Repository](https://github.com/NickVoulg02/Information-Retrieval)  
