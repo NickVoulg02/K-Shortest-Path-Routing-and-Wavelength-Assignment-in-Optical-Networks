@@ -91,7 +91,7 @@ python main_c.py   # wavelength assignment (Random Fit, First Fit, Least Used)
 - [First Fit vs Random Fit – Average Case Analysis]
 - [Wavelength Assignment in Optical Networks](https://www.researchgate.net/publication/4287125_Wavelength_Assignment_in_Optical_Networks_with_Imprecise_Network_State_Information)
 
-## 👨‍💻 Author
+👨‍💻 Author
 **Nikolaos Voulgaris**  
 Department of Computer Engineering & Informatics, University of Patras  
 [GitHub Repository](https://github.com/NickVoulg02/Information-Retrieval)  
