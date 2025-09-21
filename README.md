@@ -57,3 +57,41 @@ The project is divided into three main parts:
 Install dependencies:
 ```bash
 pip install networkx matplotlib
+```
+
+🚀 How to Run
+
+Clone the repo:
+```bash
+git clone https://github.com/NickVoulg02/Optical-Communication-Networks-Project-2024.git
+cd Optical-Communication-Networks-Project-2024
+python main_a.py   # k shortest paths
+python main_b.py   # path analysis & edge statistics
+python main_c.py   # wavelength assignment (Random Fit, First Fit, Least Used)
+```
+
+📊 Results Summary
+- k Shortest Paths
+  - For small topologies, many source-destination pairs yield fewer than k possible unique paths.
+
+  - Paths are visualized for clarity with NetworkX + Matplotlib.
+
+Path Analysis
+
+Selected shortest paths minimize hops.
+
+Edge usage statistics reveal bottleneck links.
+
+Wavelength Assignment
+
+Random Fit: Unpredictable allocation, longer execution time due to random.choice. Works when blocking is not critical.
+
+First Fit: Fastest execution, predictable compact usage of lower-index wavelengths. May overload some wavelengths under heavy load.
+
+Least Used: Balances wavelength usage, avoids overloading any single one. Best suited for higher traffic networks.
+
+📌 Observation: While blocking percentage was near zero in tested traffic matrices (sufficient wavelengths available), allocation strategies showed different efficiencies in wavelength usage and execution time.
+
+📖 References
+
+k Shortest Path Routing – Wikipedia
