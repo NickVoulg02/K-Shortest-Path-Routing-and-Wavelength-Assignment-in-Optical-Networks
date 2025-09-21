@@ -73,25 +73,20 @@ python main_c.py   # wavelength assignment (Random Fit, First Fit, Least Used)
 📊 Results Summary
 - k Shortest Paths
   - For small topologies, many source-destination pairs yield fewer than k possible unique paths.
-
   - Paths are visualized for clarity with NetworkX + Matplotlib.
 
-Path Analysis
+- Path Analysis
+  - Selected shortest paths minimize hops.
+  - Edge usage statistics reveal bottleneck links.
 
-Selected shortest paths minimize hops.
-
-Edge usage statistics reveal bottleneck links.
-
-Wavelength Assignment
-
-Random Fit: Unpredictable allocation, longer execution time due to random.choice. Works when blocking is not critical.
-
-First Fit: Fastest execution, predictable compact usage of lower-index wavelengths. May overload some wavelengths under heavy load.
-
-Least Used: Balances wavelength usage, avoids overloading any single one. Best suited for higher traffic networks.
+- Wavelength Assignment
+  - Random Fit: Unpredictable allocation, longer execution time due to random.choice. Works when blocking is not critical.
+  - First Fit: Fastest execution, predictable compact usage of lower-index wavelengths. May overload some wavelengths under heavy load.
+  - Least Used: Balances wavelength usage, avoids overloading any single one. Best suited for higher traffic networks.
 
 📌 Observation: While blocking percentage was near zero in tested traffic matrices (sufficient wavelengths available), allocation strategies showed different efficiencies in wavelength usage and execution time.
 
 📖 References
-
-k Shortest Path Routing – Wikipedia
+- [k Shortest Path Routing – Wikipedia](https://en.wikipedia.org/wiki/K_shortest_path_routing)
+- [First Fit vs Random Fit – Average Case Analysis]
+- [Wavelength Assignment in Optical Networks](https://www.researchgate.net/publication/4287125_Wavelength_Assignment_in_Optical_Networks_with_Imprecise_Network_State_Information)
